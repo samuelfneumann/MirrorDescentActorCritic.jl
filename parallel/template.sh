@@ -13,11 +13,11 @@
 # `sbatch`
 
 USE_GPU=false # Set to true if requesting GPUs
+LOCALHOSTS=("todo" "todo") # TODO: set hostnames of local devices
 
 function islocal() {
-    localhosts=("ubuntu" "alienware")
     host=$(hostname)
-    if [[ "${localhosts[*]}" =~ "${host}" ]]; then
+    if [[ "${LOCALHOSTS[*]}" =~ "${host}" ]]; then
 	return 0 # True: local
     else
 	return 1 # False: not local
