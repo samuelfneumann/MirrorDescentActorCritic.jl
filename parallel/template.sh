@@ -46,7 +46,6 @@ export JULIA_CONDAPKG_BACKEND="Null"
 # Load modules
 if islocal; then
     export OMP_NUM_THREADS=1
-    source ~/.julia/conda/3/x86_64/bin/activate
 else
     cd $PROJECT_PATH
 
