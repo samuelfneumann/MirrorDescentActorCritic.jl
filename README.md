@@ -99,3 +99,10 @@ using `sbatch parallel/X/Y/Z.sh`. Alternatively, you can use the
 `scripts/seqbatch.sh` file to automatically schedule sequential slurm jobs with
 dependencies. Note that if your experiment does not finish and times out, then
 rescheduling the experiment will continue from where the experiment left off.
+
+# Citing
+
+If you find our work useful, please cite our preprint paper:
+```bibtex
+TODO
+```
