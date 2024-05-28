@@ -98,7 +98,7 @@ if islocal; then
     # config/x/y/z/alg.sh -> x/y/z
     PARALLEL_DIR=$(dirname $0)
     CONFIG_DIR=${PARALLEL_DIR/parallel/config}
-    CONFIG="./config/${CONFIG_DIR}/${ALG_NAME}.toml"
+    CONFIG="${CONFIG_DIR}/${ALG_NAME}.toml"
 else
     # TODO: path to save file
     SAVE_PATH="ABSOLUTE_PATH" # TODO
